@@ -14,8 +14,14 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import "../../styles/responsive.scss";
+
 .portfolio-main {
-  border: 1px solid red;
+  $border: 2px solid salmon;
+
+  @media #{$bp-tablet} {
+    background-color: red;
+  }
 }
 </style>
